@@ -24,13 +24,13 @@ class ButtonWindow(Gtk.Window):
         hbox.pack_start(button, True, True, 0)
 
     def on_click_me_clicked(self, button):
-        subprocess.Popen('/home/rollidoc/bot-python/Bot_Starten.sh', shell=True)
+        subprocess.Popen('./Bot_Starten.sh', shell=True)
 
     def on_open_clicked(self, button):
-        subprocess.Popen('/home/rollidoc/bot-python/Bot_Updaten.sh', shell=True)
+        subprocess.Popen('./Bot_Updaten.sh', shell=True)
 
     def on_close_clicked(self, button):
-        subprocess.Popen('/home/rollidoc/bot-python/Bot_Killen.sh', shell=True)
+        subprocess.Popen('./Bot_Killen.sh', shell=True)
         #Gtk.main_quit()
 
 win = ButtonWindow()
